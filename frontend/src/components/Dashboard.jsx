@@ -190,7 +190,7 @@ export default function Dashboard() {
           <button onClick={()=>setModal('tx')} className="text-sm text-emerald-600 hover:underline flex items-center gap-1"><Plus size={14}/> Add</button>
         </div>
         <div className="space-y-3">
-          {transactions.slice(0,8).map(t => (
+          {[...transactions].sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,8).map(t => (
             <div key={t._id} className="flex justify-between items-center p-3 rounded-xl hover:bg-gray-50 transition group">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl" style={{backgroundColor: (CAT_COLORS[t.category]||'#9ca3af')+'20'}}>
