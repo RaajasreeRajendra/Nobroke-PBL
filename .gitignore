@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+venv/
+.env
+__pycache__/
+*.pyc
+
+# OS Files
+.DS_Store
+Thumbs.db
+Icon\r
+
+# Database
+backend/database.json
+backend/nobroke_data.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/

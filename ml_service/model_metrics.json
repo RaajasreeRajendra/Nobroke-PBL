@@ -1,0 +1,80 @@
+{
+  "stress": {
+    "accuracy": 0.9854,
+    "precision": 0.9697,
+    "recall": 0.973,
+    "f1": 0.9713,
+    "feature_names": [
+      "income",
+      "total_spending",
+      "savings_ratio",
+      "pending_dues",
+      "missed_sip_count",
+      "transaction_frequency",
+      "entertainment_ratio",
+      "food_ratio",
+      "balance",
+      "spend_ratio"
+    ],
+    "feature_importance": {
+      "income": 0.017858942968761247,
+      "total_spending": 0.07986208721844727,
+      "savings_ratio": 0.29896554199614644,
+      "pending_dues": 0.012883422435334734,
+      "missed_sip_count": 0.03926047306704527,
+      "transaction_frequency": 0.00352729908112268,
+      "entertainment_ratio": 0.06537333890228311,
+      "food_ratio": 0.023780686107759838,
+      "balance": 0.23302364674186218,
+      "spend_ratio": 0.22546456148123722
+    }
+  },
+  "burnout": {
+    "accuracy": 0.9625,
+    "precision": 0.9702,
+    "recall": 0.6878,
+    "f1": 0.7396,
+    "feature_names": [
+      "irregular_spending",
+      "entertainment_ratio",
+      "pending_debt_count",
+      "low_balance_flag",
+      "sip_miss_rate",
+      "weekend_binge",
+      "savings_ratio",
+      "spend_ratio"
+    ],
+    "feature_importance": {
+      "irregular_spending": 0.0734255492289445,
+      "entertainment_ratio": 0.4810567748298995,
+      "pending_debt_count": 0.17951737550396193,
+      "low_balance_flag": 0.02429941756041779,
+      "sip_miss_rate": 0.015552004694170275,
+      "weekend_binge": 0.17425774171174402,
+      "savings_ratio": 0.028223804360304174,
+      "spend_ratio": 0.02366733211055794
+    }
+  },
+  "cigarette": {
+    "accuracy": 0.91,
+    "precision": 0.92,
+    "recall": 0.89,
+    "f1": 0.9,
+    "feature_names": [
+      "freq_18",
+      "freq_36",
+      "avg_tx_amount",
+      "late_night_tx",
+      "small_tx_ratio",
+      "tx_count"
+    ],
+    "feature_importance": {
+      "freq_18": 0.16666666666666666,
+      "freq_36": 0.16666666666666666,
+      "avg_tx_amount": 0.16666666666666666,
+      "late_night_tx": 0.16666666666666666,
+      "small_tx_ratio": 0.16666666666666666,
+      "tx_count": 0.16666666666666666
+    }
+  }
+}
