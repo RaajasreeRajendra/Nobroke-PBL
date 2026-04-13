@@ -18,7 +18,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 const PORT = process.env.PORT || 5001;
-const ML_URL = process.env.ML_URL || 'http://localhost:8000';
+const ML_HOST = process.env.ML_HOST;
+const ML_URL = process.env.ML_URL || (ML_HOST ? `http://${ML_HOST}:10000` : 'http://localhost:8000');
 const JWT_SECRET = process.env.JWT_SECRET || 'nobroke_secret_2024';
 const MONGO_URI = process.env.MONGO_URI;
 

@@ -16,8 +16,8 @@ services:
     buildCommand: npm install
     startCommand: npm start
     envVars:
-      - key: ML_URL
+      - key: ML_HOST
         fromService:
           name: nobroke-ml
           type: web
-          property: url
+          property: host
