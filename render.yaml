@@ -2,15 +2,17 @@ services:
   - type: web
     name: nobroke-ml
     env: python
+    rootDir: ml_service
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10.0
+        value: "3.10.0"
 
   - type: web
     name: nobroke-backend
     env: node
+    rootDir: backend
     buildCommand: npm install
     startCommand: npm start
     envVars:
